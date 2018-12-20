@@ -9,13 +9,14 @@
     </header>
     <div class="search">
       <input placeholder="搜索墓碑" type="text">
-      <p>找不到你要的墓碑？去 <a class='add' href="https://github.com/myvin/gravesoftheinternet" target='_blank' title='添加墓碑'>添加墓碑。</a></p>
+      <p>缺少墓碑？去 <a class='add' href="https://github.com/myvin/gravesoftheinternet" target='_blank' title='添加墓碑'>添加墓碑。</a></p>
+      <p>请自备梯子以正常访问 wikipedia、Google 相关链接。</p>
     </div>
     <ul class='companies'>
-      <li class='active'>Name</li>
+      <li class='active'>Baidu</li>
     </ul>
     <div class="graves">
-      <grave v-for='(item, index) in [1,2,3,4,5,6,7,8]' :key='index'></grave>
+      <grave v-for='(item, index) in list' :item='item' :key='index'></grave>
     </div>
     <footer>
       <p>Graves of the Internet collected by <a href="https://github.com/myvin" title="myvin" target='_blank'>myvin</a> inspired by <a href="https://killedbygoogle.com/" title="killedbygoogle" target='_blank'>killedbygoogle</a></p>
@@ -27,6 +28,7 @@
 
 <script>
 import Grave from './Grave'
+import Baidu from '../graveyard/baidu'
 export default {
   name: 'index',
   components: {
@@ -34,8 +36,11 @@ export default {
   },
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App'
+      list: []
     }
+  },
+  mounted () {
+    this.list = Baidu
   }
 }
 </script>
@@ -111,6 +116,7 @@ export default {
     min-height: 70vh;
     max-width: 1400px;
     margin: 0 auto;
+    padding-bottom: 30px;
   }
   @media screen and (min-width: 800px) {
     .graves {

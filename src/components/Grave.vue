@@ -2,18 +2,32 @@
   <div class='grave'>
     <div class="info">
       <img src="../assets/grave.png" alt="grave">
-      <div class="time">Start time</div>
+      <div class="time">{{item.startAt}}</div>
       <div class="time">至</div>
-      <div class="time">End time</div>
+      <div class="time">{{item.endAt}}</div>
     </div>
     <div class="content">
       <h2>
-        <a href="" target="_blank" rel="noopener noreferrer">name</a>
+        <a :href="item.link" target="_blank" :title='item.name' rel="noopener noreferrer">{{item.name}}</a>
       </h2>
-      <p>desc</p>
+      <p>{{item.description}}</p>
     </div>
   </div>
 </template>
+
+<script>
+export default {
+  name: 'grave',
+  props: {
+    item: {
+      type: Object,
+      default: function () {
+        return {}
+      }
+    }
+  }
+}
+</script>
 
 <style scoped>
   .grave {
@@ -22,7 +36,6 @@
     display: flex;
     box-sizing: border-box;
     margin: 1em auto;
-    padding-bottom: 5px;
     border-bottom: 1px solid rgb(222, 222, 222);
     flex: 0 0 30%;
   }
@@ -57,5 +70,6 @@
     font-size: 0.9em;
     line-height: 1.5;
     margin: 8px 0 0;
+    text-align: justify;
   }
 </style>
