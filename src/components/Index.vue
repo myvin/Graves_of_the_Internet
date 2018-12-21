@@ -4,23 +4,23 @@
       <img src="../assets/grave.png" alt="">
       <div class="title">
         <h1>Graves of the Internet</h1>
-        <h2>互联网墓碑</h2>
+        <h2>互联网坟墓</h2>
       </div>
     </header>
     <div class="search">
-      <input placeholder="搜索墓碑" type="text">
-      <p>缺少墓碑？去 <a class='add' href="https://github.com/myvin/gravesoftheinternet" target='_blank' title='添加墓碑'>添加墓碑。</a></p>
+      <input placeholder="搜索坟墓" type="text">
+      <p>缺少坟墓？去 <a class='add' href="https://github.com/myvin/gravesoftheinternet" target='_blank' title='添加坟墓'>添加坟墓</a>。</p>
       <p>请自备梯子以正常访问 wikipedia、Google 相关链接。</p>
     </div>
     <ul class='companies'>
-      <li class='active'>Baidu</li>
+      <li @click='choose(name, index)' :class='{active: active === index}' v-for='(name, index) in Object.keys(graves)' :key='index'>{{name}}({{graves[name].length}})</li>
     </ul>
     <div class="graves">
       <grave v-for='(item, index) in list' :item='item' :key='index'></grave>
     </div>
     <footer>
       <p>Graves of the Internet collected by <a href="https://github.com/myvin" title="myvin" target='_blank'>myvin</a> inspired by <a href="https://killedbygoogle.com/" title="killedbygoogle" target='_blank'>killedbygoogle</a></p>
-      <p>互联网墓碑 - 互联网公司逝去产品列表</p>
+      <p>互联网坟墓 - 互联网公司逝去产品列表</p>
       <p>以此祭奠那些夕阳下的奔跑，祭奠那些逝去的青春</p>
     </footer>
   </div>
@@ -28,7 +28,7 @@
 
 <script>
 import Grave from './Grave'
-import Baidu from '../graveyard/baidu'
+import { Graves } from '../graves'
 export default {
   name: 'index',
   components: {
@@ -36,11 +36,19 @@ export default {
   },
   data () {
     return {
-      list: []
+      graves: Graves,
+      list: [],
+      active: 0
     }
   },
   mounted () {
-    this.list = Baidu
+    this.list = Graves.Baidu
+  },
+  methods: {
+    choose (name, index) {
+      this.list = Graves[name]
+      this.active = index
+    }
   }
 }
 </script>
