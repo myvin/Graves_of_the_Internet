@@ -8,7 +8,7 @@
       </div>
     </header>
     <div class="search">
-      <input placeholder="搜索坟墓" type="text">
+      <input @input='filter' v-model='val' placeholder="搜索坟墓" type="text">
       <p>缺少坟墓？去 <a class='add' href="https://github.com/myvin/gravesoftheinternet" target='_blank' title='添加坟墓'>添加坟墓</a>。</p>
       <p>请自备梯子以正常访问 wikipedia、Google 相关链接。</p>
     </div>
@@ -16,7 +16,7 @@
       <li @click='choose(name, index)' :class='{active: activeName === name}' v-for='(name, index) in Object.keys(graves)' :key='index'>{{name}}({{graves[name].length}})</li>
     </ul>
     <div class="graves">
-      <grave v-for='(item, index) in list' :item='item' :key='index'></grave>
+      <grave v-for='(item, index) in filterList' :item='item' :key='index'></grave>
     </div>
     <footer>
       <p>Graves of the Internet collected by <a href="https://github.com/myvin" title="myvin" target='_blank'>myvin</a> inspired by <a href="https://killedbygoogle.com/" title="killedbygoogle" target='_blank'>killedbygoogle</a></p>
@@ -38,16 +38,32 @@ export default {
     return {
       graves: Graves,
       list: [],
+      filterList: [],
+      val: '',
       activeName: 'Baidu'
     }
   },
   mounted () {
-    this.list = Graves[this.activeName]
+    this.list = this.filterList = Graves[this.activeName]
   },
   methods: {
     choose (name, index) {
-      this.list = Graves[name]
+      if (this.activeName === name) {
+        return
+      }
+      this.list = this.filterList = Graves[name]
       this.activeName = name
+      this.val = ''
+    },
+    filter () {
+      if (this.val.replace(/\s+/g)) {
+        this.filterList = this.list.filter(item => {
+          let reg = new RegExp(this.val, 'gi')
+          return reg.test(item.name) || reg.test(item.description)
+        })
+      } else {
+        this.filterList = this.list
+      }
     }
   }
 }
