@@ -1,4 +1,4 @@
-[English](README.en.md)  [中文](README.md)
+[Read in English](README.en.md) - [中文](README.md)
 
 <div align="center">
   <img src="src/assets/grave.png" alt="grave" style="height: 80px;width: 80px;padding: 0 20px;">
@@ -13,9 +13,9 @@
 
 目前仅列出了 `Baidu`、`Alibaba`、`Tencent` 三家互联网公司已经逝去或正在逝去的产品，不包括游戏类应用。
 
-## 补充/修改其他坟墓
+## 补充/修改产品列表
 
-如要补充、修改 `Baidu`、`Alibaba`、`Tencent` 墓碑，在 `graves.js` 里添加、修改对应坟墓数据即可，如下：
+如要补充、修改 `Baidu`、`Alibaba`、`Tencent` 产品列表，在 `graves.js` 里添加、修改对应坟墓数据即可，如下：
 
 ```
 {

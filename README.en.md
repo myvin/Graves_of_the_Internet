@@ -1,4 +1,4 @@
-[English](README.en.md)  [中文](README.md)
+[中文](README.md) - [Read in English](README.en.md)
 
 <div align="center">
   <img src="src/assets/grave.png" alt="grave" style="height: 80px;width: 80px;padding: 0 20px;">
@@ -15,7 +15,7 @@ Here the disappeared/disappearing products expect game applications of the three
 
 ## Contribute
 
-To add/modify a grave of Baidu/Alibaba/Tencent, just appended/modify the grave object to/in `graves.js` file:
+To add/modify a grave object of Baidu/Alibaba/Tencent, just appended/modify the grave object to/in `graves.js` file:
 
 ```
 {
