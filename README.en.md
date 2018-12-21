@@ -1,20 +1,20 @@
-[English](README.en.md)
+[中文](README.md)
 
 <div align="center">
   <img src="assets/grave.png" alt="grave" style="height: 80px;width: 80px;padding: 0 20px;">
-  <h1>Graves of the Internet - 互联网坟墓</h1>
+  <h1>Graves of the Internet</h1>
   <h3>Inspired by [killedbygoogle](https://killedbygoogle.com/).</h3>
-  <p>互联网公司逝去产品列表</p>
-  <p>以此祭奠那些夕阳下的奔跑，祭奠那些逝去的青春</p>
+  <p>A list of products of the internet enterprises</p>
+  <p>To commemorate our lost time</p>
 </div>
 
-## 说明
+## Instrution
 
-目前仅列出了 `Baidu`、`Alibaba`、`Tencent` 三家互联网公司已经逝去或正在逝去的产品，不包括游戏类应用。
+Here the disappeared/disappearing products expect game applications of the three internet enterprises: `Baidu`、`Alibaba`、`Tencent` are listed.
 
-## 补充/修改其他坟墓
+## Contribute
 
-如要补充、修改 `Baidu`、`Alibaba`、`Tencent` 墓碑，在 `graves.js` 里添加、修改对应坟墓数据即可，如下：
+To add/modify a grave of Baidu/Alibaba/Tencent, just appended/modify the grave object to/in `graves.js` file:
 
 ```
 {
@@ -26,15 +26,13 @@
 }
 ```
 
-## 请喝咖啡
+## Buy me a cup of coffee
 
-如果我的项目对你有帮助，可以请我喝杯咖啡。
-
-### 支付宝
+### Alipay
 
 <img src="https://raw.githubusercontent.com/myvin/miniprogram/master/9181893579988_.pic_hd.jpg" width="300" /> <img src="https://raw.githubusercontent.com/myvin/miniprogram/master/9191893579989_.pic.jpg" width="300" />
 
-### 微信
+### Wechat Pay
 
 <img src="https://raw.githubusercontent.com/myvin/miniprogram/master/9201893579990_.pic_hd.jpg" width="300" />
 
