@@ -1,14 +1,15 @@
-[English](README.en.md)
+[English](README.en.md)  [中文](README.md)
 
 <div align="center">
-  <img src="assets/grave.png" alt="grave" style="height: 80px;width: 80px;padding: 0 20px;">
+  <img src="src/assets/grave.png" alt="grave" style="height: 80px;width: 80px;padding: 0 20px;">
   <h1>Graves of the Internet - 互联网坟墓</h1>
-  <h3>Inspired by [killedbygoogle](https://killedbygoogle.com/).</h3>
   <p>互联网公司逝去产品列表</p>
   <p>以此祭奠那些夕阳下的奔跑，祭奠那些逝去的青春</p>
 </div>
 
 ## 说明
+
+> Inspired by [killedbygoogle](https://killedbygoogle.com/)
 
 目前仅列出了 `Baidu`、`Alibaba`、`Tencent` 三家互联网公司已经逝去或正在逝去的产品，不包括游戏类应用。
 

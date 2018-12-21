@@ -1,14 +1,15 @@
-[中文](README.md)
+[English](README.en.md)  [中文](README.md)
 
 <div align="center">
-  <img src="assets/grave.png" alt="grave" style="height: 80px;width: 80px;padding: 0 20px;">
+  <img src="src/assets/grave.png" alt="grave" style="height: 80px;width: 80px;padding: 0 20px;">
   <h1>Graves of the Internet</h1>
-  <h3>Inspired by [killedbygoogle](https://killedbygoogle.com/).</h3>
   <p>A list of products of the internet enterprises</p>
   <p>To commemorate our lost time</p>
 </div>
 
 ## Instrution
+
+> Inspired by [killedbygoogle](https://killedbygoogle.com/)
 
 Here the disappeared/disappearing products expect game applications of the three internet enterprises: `Baidu`、`Alibaba`、`Tencent` are listed.
 
