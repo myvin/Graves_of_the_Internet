@@ -16,4 +16,8 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+::selection {
+  background: #ddd;
+  color: #333;
+}
 </style>

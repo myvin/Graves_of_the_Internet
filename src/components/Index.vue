@@ -13,7 +13,7 @@
       <p>请自备梯子以正常访问 wikipedia、Google 相关链接。</p>
     </div>
     <ul class='companies'>
-      <li @click='choose(name, index)' :class='{active: active === index}' v-for='(name, index) in Object.keys(graves)' :key='index'>{{name}}({{graves[name].length}})</li>
+      <li @click='choose(name, index)' :class='{active: activeName === name}' v-for='(name, index) in Object.keys(graves)' :key='index'>{{name}}({{graves[name].length}})</li>
     </ul>
     <div class="graves">
       <grave v-for='(item, index) in list' :item='item' :key='index'></grave>
@@ -38,16 +38,16 @@ export default {
     return {
       graves: Graves,
       list: [],
-      active: 0
+      activeName: 'Baidu'
     }
   },
   mounted () {
-    this.list = Graves.Baidu
+    this.list = Graves[this.activeName]
   },
   methods: {
     choose (name, index) {
       this.list = Graves[name]
-      this.active = index
+      this.activeName = name
     }
   }
 }
@@ -114,11 +114,13 @@ export default {
     list-style-type: none;
     padding: 0 0 15px;
   }
-  .companies li.active {
-    font-weight: bold;
-  }
   .companies li {
     padding: 10px;
+    cursor: pointer;
+  }
+  .companies li.active {
+    font-weight: bold;
+    cursor: auto;
   }
   .graves {
     min-height: 70vh;
