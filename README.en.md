@@ -13,6 +13,14 @@
 
 Here the disappeared/disappearing products expect game applications of the three internet enterprises: `Baidu`、`Alibaba`、`Tencent` are listed.
 
+## Screenshot
+
+<img src="static/screenshot.gif" alt="screenshot">
+
+## Demonstration
+
+Visit [https://github.mayuxiao.com/gravesoftheinternet](https://github.mayuxiao.com/gravesoftheinternet).
+
 ## Contribute
 
 To add/modify a grave object of Baidu/Alibaba/Tencent, just appended/modify the grave object to/in `graves.js` file:

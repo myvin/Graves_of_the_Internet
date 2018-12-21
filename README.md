@@ -13,6 +13,14 @@
 
 目前仅列出了 `Baidu`、`Alibaba`、`Tencent` 三家互联网公司已经逝去或正在逝去的产品，不包括游戏类应用。
 
+## 演示截图
+
+<img src="static/screenshot.gif" alt="screenshot">
+
+## 访问地址
+
+访问 [https://github.mayuxiao.com/gravesoftheinternet](https://github.mayuxiao.com/gravesoftheinternet) 查看。
+
 ## 补充/修改产品列表
 
 如要补充、修改 `Baidu`、`Alibaba`、`Tencent` 产品列表，在 `graves.js` 里添加、修改对应坟墓数据即可，如下：
