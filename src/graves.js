@@ -2,7 +2,7 @@ const Graves = {
   Baidu: [
     {
       name: '百度 mall',
-      link: 'https://www.google.com/search?q=%E7%99%BE%E5%BA%A6%E6%9C%AA%E6%9D%A5%E5%95%86%E5%BA%97',
+      link: 'https://www.google.com/search?q=%E7%99%BE%E5%BA%A6MALL',
       startAt: '2015.11',
       endAt: '2017.4',
       description: '百度MALL是百度旗下定位中高端的品质电商，定向邀请1000家国内外中高端知名品牌入驻，且只和品牌官方直接合作。2017年4月，百度MALL网站悄无声息地关闭。'
