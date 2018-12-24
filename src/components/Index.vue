@@ -1,5 +1,8 @@
 <template>
   <div class='index'>
+    <a class="forkme" href="https://github.com/myvin/gravesoftheinternet" target="_blank">
+      <img src='../assets/forkme.png' alt="fork">
+    </a>
     <header>
       <img src="../assets/grave.png" alt="">
       <div class="title">
@@ -70,6 +73,12 @@ export default {
 </script>
 
 <style scoped>
+  .forkme {
+    position: fixed;
+    top: 0;
+    right: 0;
+    border: none;
+  }
   header {
     display: flex;
     justify-content: center;
