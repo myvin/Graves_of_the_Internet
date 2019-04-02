@@ -131,7 +131,7 @@ const Graves = {
       link: 'https://www.google.com/search?q=%E7%99%BE%E5%BA%A6%E4%B8%8B%E5%90%A7',
       startAt: '未知',
       endAt: '2005.6',
-      description: '一款基于互联网最先进的点对点技术的文件传输软件。2015年6月，发布百度知道，并关闭了百度下吧。'
+      description: '一款基于互联网最先进的点对点技术的文件传输软件。2005年6月，发布百度知道，并关闭了百度下吧。'
     }
   ],
   Alibaba: [

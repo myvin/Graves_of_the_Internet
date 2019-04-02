@@ -1,6 +1,6 @@
 <template>
   <div class='index'>
-    <a class="forkme" href="https://github.com/myvin/gravesoftheinternet" target="_blank">
+    <a class="forkme" href="https://github.com/myvin/Graves_of_the_Internet" target="_blank">
       <img src='../assets/forkme.png' alt="fork">
     </a>
     <header>
