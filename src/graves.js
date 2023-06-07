@@ -274,6 +274,13 @@ const Graves = {
       startAt: '未知',
       endAt: '2013.6',
       description: '博客平台，后服务下线。'
+    },
+    {
+      name: '虾米音乐',
+      link: 'https://zh.wikipedia.org/wiki/%E8%99%BE%E7%B1%B3%E9%9F%B3%E4%B9%90',
+      startAt: '2007',
+      endAt: '2021.2.5',
+      description: '2013年1月10日被阿里巴巴集团收购。于2021年02月05日正式停止服务'
     }
   ],
   Tencent: [
