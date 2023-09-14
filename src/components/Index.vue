@@ -20,6 +20,7 @@
     </ul>
     <div class="graves">
       <grave v-for='(item, index) in filterList' :item='item' :key='index'></grave>
+      <i></i><i></i><i></i>
     </div>
     <footer>
       <p>Graves of the Internet collected by <a href="https://github.com/myvin" title="myvin" target='_blank'>myvin</a> inspired by <a href="https://killedbygoogle.com/" title="killedbygoogle" target='_blank'>killedbygoogle</a></p>
@@ -153,10 +154,23 @@ export default {
     margin: 0 auto;
     padding-bottom: 30px;
   }
+  .graves > i {
+    width: 500px;
+    max-width: 100%;
+    margin: 0 auto;
+  }
   @media screen and (min-width: 800px) {
     .graves {
       display: flex;
       flex-flow: row wrap;
+    }
+    .graves > i {
+      flex: 0 0 30%;
+    }
+  }
+  @media screen and (max-width: 1100px) {
+    .graves > i {
+      flex: 0 0 50%;
     }
   }
   footer {
