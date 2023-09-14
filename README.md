@@ -19,7 +19,7 @@
 
 ## 访问地址
 
-访问 [https://github.mayuxiao.com/gravesoftheinternet](https://github.mayuxiao.com/gravesoftheinternet) 查看。
+访问 [https://myvin.github.io/Graves_of_the_Internet](https://myvin.github.io/Graves_of_the_Internet) 查看。
 
 ## 补充/修改产品列表
 

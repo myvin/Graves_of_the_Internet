@@ -19,7 +19,7 @@ Here the disappeared/disappearing products expect game applications of the three
 
 ## Demonstration
 
-Visit [https://github.mayuxiao.com/gravesoftheinternet](https://github.mayuxiao.com/gravesoftheinternet).
+Visit [https://myvin.github.io/Graves_of_the_Internet](https://myvin.github.io/Graves_of_the_Internet).
 
 ## Contribute
 
